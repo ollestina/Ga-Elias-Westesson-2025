@@ -4,6 +4,8 @@ Elias Westesson
 
 Detta program är skrivet som en del av ett gymnasiearbete i samarbete med Ystad Gymnasium Österport.
 
+Programmet är designat för att användas med en Arduino Nano 33 BLE Sense Rev 2.
+
 Detta program använder sig av Bluetooth Low Energy (BLE) för att ta emot en text, 
 kryptera den med ett shift chiffer och sedan skicka både den krypterade och dekrypterade texten tillbaka via BLE.
 
