@@ -5,7 +5,7 @@ Elias Westesson
 Detta program är skrivet som en del av ett gymnasiearbete i samarbete med Ystad Gymnasium Österport.
 
 Detta program använder sig av Bluetooth Low Energy (BLE) för att ta emot en text, 
-kryptera den med ett Vigenére-baserat chiffer och sedan skicka både den krypterade och dekrypterade texten tillbaka via BLE.
+kryptera den med ett shift chiffer och sedan skicka både den krypterade och dekrypterade texten tillbaka via BLE.
 
 Programmet fungerar enligt följande steg:
 1. Startar BLE och annonserar en tjänst med tre egenskaper:
@@ -91,7 +91,7 @@ void loop() {
   }
 }
 
-// Krypteringsfunktion med en variant av Vigenére chiffer
+// Krypteringsfunktion 
 String encrypt(String text, String key) {
   String result = "";
   int keyLength = key.length();
@@ -120,7 +120,7 @@ String encrypt(String text, String key) {
   return result;
 }
 
-// Dekrypteringsfunktion som använder Vigenére chiffer baklänges
+// Dekrypteringsfunktion 
 String decrypt(String text, String key) {
   String result = "";
   int keyLength = key.length();
